@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="ass/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>Gallery</title>
+
+</head>
+<body>
+<div class="section" id="section">
+    <div class="img" id="img">
+        <img class="card"  src="./example/1_s.jpg">
+    </div>
+
+    <div class="img" id="img1">
+        <img class="card" src="./example/2_s.jpg">
+    </div>
+
+    <div class="img" id="img2">
+        <img class="card" src="./example/3_s.jpg">
+    </div>
+
+</div>
+<div class="active_img">
+<div class="open_img" id="open_img">
+    <div class="close" id="close"><i class="fas fa-times"></i></div>
+    <img class="open_img__comment" src="./example/1_b.jpg" alt="">
+    <div class="like" onclick="active(this)">
+        <i class="fas fa-heart"></i>
+    </div>
+    <div class="comments">
+    <form name="comment" method="post">
+        <p class="comments_name">
+            <label>Имя:</label>
+            <input type="text" name="name" />
+        </p>
+        <p class="comments_text">
+            <label>Комментарий:</label>
+            <br />
+            <textarea  name="text_comment"  cols="68" rows="2"></textarea>
+        </p>
+        <p class="comments_btn">
+            <input  type="submit" value="Отправить" />
+        </p>
+    </form>
+    </div>
+</div>
+<div class="open_img" id="open_img1">
+    <div class="close" id="close1"><i class="fas fa-times"></i></div>
+    <img class="open_img__comment" src="./example/2_b.jpg" alt="">
+    <div class="like" onclick="active(this)">
+        <i class="fas fa-heart"></i>
+    </div>
+    <div class="comments">
+        <form name="comment" method="post">
+            <p class="comments_name">
+                <label>Имя:</label>
+                <input type="text" name="name" />
+            </p>
+            <p class="comments_text">
+                <label>Комментарий:</label>
+                <br />
+                <textarea  name="text_comment"  cols="68" rows="2"></textarea>
+            </p>
+            <p class="comments_btn">
+                <input  type="submit" value="Отправить" />
+            </p>
+        </form>
+    </div>
+</div>
+<div class="open_img" id="open_img2">
+    <div class="close" id="close2"><i class="fas fa-times"></i></div>
+    <img class="open_img__comment" src="./example/3_b.jpg" alt="">
+    <div class="like" onclick="active(this)">
+        <i class="fas fa-heart"></i>
+    </div>
+    <div class="comments">
+        <form name="comment" method="post">
+            <p class="comments_name">
+                <label>Имя:</label>
+                <input type="text" name="name" />
+            </p>
+            <p class="comments_text">
+                <label>Комментарий:</label>
+                <br />
+                <textarea  name="text_comment"  cols="68" rows="2"></textarea>
+            </p>
+            <p class="comments_btn">
+                <input  type="submit" value="Отправить" />
+            </p>
+        </form>
+    </div>
+</div>
+    </div>
+</div>
+
+</body>
+<script src="ass/app.js"></script>
+</html>
